@@ -16,13 +16,14 @@ x + 2y + 3z = 13
     A
 
 2. Output:
-    $$\left[
+
+    $$$\left[
     \begin{array}{ccc|c}
     1 & 1 & 1 & 6 \\
     2 & 3 & 1 & 10 \\
     1 & 2 & 3 & 13
     \end{array}
-    \right]$$
+    \right]$$$
 
 ### 2. Eliminasi Gaussian (Operasi Baris Elementer)
 1. Hilangkan elemen di bawah pivot pertama
