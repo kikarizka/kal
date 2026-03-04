@@ -17,13 +17,11 @@ x + 2y + 3z = 13
 
 2. Output:
 
-    $$$\left[
-    \begin{array}{ccc|c}
-    1 & 1 & 1 & 6 \\
-    2 & 3 & 1 & 10 \\
-    1 & 2 & 3 & 13
-    \end{array}
-    \right]$$$
+    $$\begin{bmatrix}
+    1 & 1 & 1 & \vline & 6 \\
+    2 & 3 & 1 & \vline & 10 \\
+    1 & 2 & 3 & \vline & 13
+    \end{bmatrix}$$
 
 ### 2. Eliminasi Gaussian (Operasi Baris Elementer)
 1. Hilangkan elemen di bawah pivot pertama
