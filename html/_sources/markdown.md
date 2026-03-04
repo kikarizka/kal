@@ -25,7 +25,7 @@ x + 2y + 3z = 13
     1 & 2 & 3 & 13
     \end{array}
     \right]
-    \]$$\
+    \]$$
 
 ### 2. Eliminasi Gaussian (Operasi Baris Elementer)
 1. Hilangkan elemen di bawah pivot pertama
