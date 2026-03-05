@@ -20,11 +20,9 @@ $$
 
     <div class="sage">
     A = matrix([[1, 1, 1, 6], [2, 3, 1, 10], [1, 2, 3, 13]])
-    A
+    print (A)
     </div>
-    A = matrix([[1, 1, 1, 6], [2, 3, 1, 10], [1, 2, 3, 13]])
-    A
-
+   
 2. Output:
 
     $$
@@ -48,10 +46,15 @@ $$
     -  A.add_multiple_of_row(2, 0, -1) *Artinya:* Tambahkan -1* (baris 0) ke baris 2
 
         1. Kode:
-            ```python
+            <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+            <script>
+            sagecell.makeSagecell({inputLocation: '.sage'});
+            </script>
+
+            <div class="sage">
             A.add_multiple_of_row(1, 0, -2)
             A.add_multiple_of_row(2, 0, -1)
-            A
+            print (A)
 
         2. Output:
 
