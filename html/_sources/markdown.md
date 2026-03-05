@@ -2,11 +2,13 @@
 
 ## A. Sistem Persamaan Linear Tiga Variabel
 
-$$\begin{cases}
+$$
+\begin{cases}
 x + y + z = 6 \\
 2x + 3y + z = 10 \\
 x + 2y + 3z = 13
-\end{cases}$$
+\end{cases}
+$$
 
 **Penyelesaian:**
 ### 1. Ubah ke Matriks Augmented
@@ -17,7 +19,7 @@ x + 2y + 3z = 13
 
 2. Output:
 
-    $$\[
+    $$
     \left[
     \begin{array}{ccc|c}
     1 & 1 & 1 & 6 \\
@@ -25,7 +27,7 @@ x + 2y + 3z = 13
     1 & 2 & 3 & 13
     \end{array}
     \right]
-    \]$$
+    $$
 
 ### 2. Eliminasi Gaussian (Operasi Baris Elementer)
 1. Hilangkan elemen di bawah pivot pertama
@@ -45,13 +47,15 @@ x + 2y + 3z = 13
 
         2. Output:
 
-            $$\left[
+            $$
+            \left[
             \begin{array}{ccc|c}
             1 & 1 & 1 & 6 \\
             0 & 1 & -1 & -2 \\
             0 & 1 & 2 & 7
             \end{array}
-            \right]$$
+            \right]
+            $$
 
 2. Hilangkan elemen di bawah pivot kedua
 
@@ -67,13 +71,15 @@ x + 2y + 3z = 13
         
         2. Output:
 
-           $$\left[
+            $$
+            \left[
             \begin{array}{ccc|c}
             1 & 1 & 1 & 6 \\
             0 & 1 & -1 & -2 \\
             0 & 0 & 3 & 9
             \end{array}
-            \right]$$
+            \right]
+            $$
 
 3. Substitusi Balik
 
@@ -100,13 +106,15 @@ x + 2y + 3z = 13
         A
     2. Output
 
-        $$\left[
+        $$
+        \left[
         \begin{array}{ccc|c}
         1 & 1 & 1 & 6 \\
         0 & 1 & -1 & -2 \\
         0 & 0 & 1 & 3
         \end{array}
-        \right]$$
+        \right]
+        $$
     3. Substitusi Balik (Manual)
 
         $$z = 3
@@ -120,12 +128,14 @@ x + 2y + 3z = 13
    
 ## B. Sistem Persamaan Linear Empat Variabel
 
-$$\begin{cases}
+$$
+\begin{cases}
 x + y + z + w = 10 \\
 2x + y + z + w = 13 \\
 x + 2y + z + w = 14 \\
 x + y + 2z + w = 15
-\end{cases}$$
+\end{cases}
+$$
 
 **Penyelesaian:**
 ### 1. Ubah ke Matriks Augmented
@@ -134,12 +144,14 @@ x + y + 2z + w = 15
     A = matrix([[1, 1, 1, 1, 10], [2, 1, 1, 1, 13], [1, 2, 1, 1, 14], [1, 1, 2, 1, 15]])
     A
 2. Output:
-    $$\begin{cases}
+    $$
+    \begin{cases}
     x + y + z + w = 10 \\
     2x + y + z + w = 13 \\
     x + 2y + z + w = 14 \\
     x + y + 2z + w = 15
-    \end{cases}$$
+    \end{cases}
+    $$
 
 ### 2. Eliminasi Gaussian (Operasi Baris Elementer)
 1. Hilangkan elemen di bawah pivot pertama
@@ -162,14 +174,16 @@ x + y + 2z + w = 15
 
         2. Output:
 
-            $$\left[
+            $$
+            \left[
             \begin{array}{cccc|c}
             1 & 1 & 1 & 1 & 10 \\
             0 & -1 & -1 & -1 & -7 \\
             0 & 1 & 0 & 0 & 4 \\
             0 & 0 & 1 & 0 & 5
             \end{array}
-            \right]$$
+            \right]
+            $$
 
 2. Tukar B2 (baris 1) dan B3 (baris 2) (agar pivot positif)
     1. Kode:
@@ -182,14 +196,16 @@ x + y + 2z + w = 15
 
     2. Output:
 
-        $$\left[
+        $$
+        \left[
         \begin{array}{cccc|c}
         1 & 1 & 1 & 1 & 10 \\
         0 & 1 & 0 & 0 & 4 \\
         0 & -1 & -1 & -1 & -7 \\
         0 & 0 & 1 & 0 & 5
         \end{array}
-        \right]$$
+        \right]
+        $$
 
 3. Hilangkan elemen di bawah pivot kedua
     B3 → B3 + B2
@@ -202,14 +218,16 @@ x + y + 2z + w = 15
 
     2. Output:
 
-        $$\left[
+        $$
+        \left[
         \begin{array}{cccc|c}
         1 & 1 & 1 & 1 & 10 \\
         0 & 1 & 0 & 0 & 4 \\
         0 & 0 & -1 & -1 & -3 \\
         0 & 0 & 1 & 0 & 5
         \end{array}
-        \right]$$
+        \right]
+        $$
 
 4. Hilangkan elemen di bawah pivot ketiga
     B4 → B4 + B3
@@ -222,14 +240,16 @@ x + y + 2z + w = 15
     
     2. Output:
 
-        $$\left[
+        $$
+        \left[
         \begin{array}{cccc|c}
         1 & 1 & 1 & 1 & 10 \\
         0 & 1 & 0 & 0 & 4 \\
         0 & 0 & -1 & -1 & -3 \\
         0 & 0 & 0 & -1 & 2
         \end{array}
-        \right]$$
+        \right]
+        $$
 
 5. Substitusi Balik
     1. Dari baris 4:
@@ -264,12 +284,14 @@ x + y + 2z + w = 15
 
     2. Output:
 
-        $$\begin{bmatrix}
+        $$
+        \begin{bmatrix}
         1 & 1 & 1 & 1 & 10 \\
         0 & 1 & 0 & 0 & 4 \\
         0 & 0 & -1 & -1 & -3 \\
         0 & 0 & 0 & -1 & 2
-        \end{bmatrix}$$
+        \end{bmatrix}
+        $$
 
     3. Substitusi Balik (Manual)
 
