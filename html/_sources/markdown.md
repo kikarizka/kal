@@ -13,7 +13,15 @@ $$
 **Penyelesaian:**
 ### 1. Ubah ke Matriks Augmented
 1. Kode:
-    ```python
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>
+    sagecell.makeSagecell({inputLocation: '.sage'});
+    </script>
+
+    <div class="sage">
+    A = matrix([[1, 1, 1, 6], [2, 3, 1, 10], [1, 2, 3, 13]])
+    A
+    </div>
     A = matrix([[1, 1, 1, 6], [2, 3, 1, 10], [1, 2, 3, 13]])
     A
 
@@ -278,6 +286,8 @@ $$
     1. Kode:
 
         ```python
+        A.rescale_row(2, -1)
+        A.rescale_row(3, -1)
         A.rescale_row(2, -1)
         A.rescale_row(3, -1)
         A
